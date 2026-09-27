@@ -1,0 +1,2569 @@
+{
+  "config": {
+    "name": "連接車_15m",
+    "lengths_mm": [
+      14000,
+      14000
+    ],
+    "gaps_mm": [
+      1000
+    ],
+    "joint_fractions": [
+      0.5
+    ],
+    "normal_ends": false,
+    "outer_insets_mm": [
+      3000,
+      3000
+    ],
+    "coupler_mm": [
+      250,
+      250
+    ],
+    "radius_m": 100,
+    "direction": 1,
+    "test_radii_m": [
+      100,
+      125,
+      150,
+      200,
+      300,
+      500,
+      1000,
+      2000
+    ],
+    "equipment_reserve_mm": 10,
+    "reference_spacing_m": [
+      14,
+      15,
+      0.01
+    ]
+  },
+  "method": "一定半径・左右曲線・カント0・動揺0。分離余裕は平面SATの下限で3D最短距離ではない。",
+  "building": [
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 0,
+      "margin_m": 0.20699601592044514,
+      "z": 3.8233200530681506
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 100,
+      "margin_m": 0.1193792398375757,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 100,
+      "margin_m": 0.06693090571490212,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 100,
+      "margin_m": 0.7938533758956532,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 100,
+      "margin_m": 0.1193792398375757,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 100,
+      "margin_m": 0.06693090571490212,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 100,
+      "margin_m": 0.7938533758956532,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 100,
+      "margin_m": 0.34739334217649476,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 125,
+      "margin_m": 0.15272299861972516,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 125,
+      "margin_m": 0.08959713467780261,
+      "z": 0.103
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 125,
+      "margin_m": 0.8271971346778028,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 125,
+      "margin_m": 0.15272299861972516,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 125,
+      "margin_m": 0.08959713467780261,
+      "z": 0.103
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 125,
+      "margin_m": 0.8271971346778028,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 125,
+      "margin_m": 0.3245275972962316,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 150,
+      "margin_m": 0.16138266578634197,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 150,
+      "margin_m": 0.0963826657863418,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 150,
+      "margin_m": 0.8493826657863419,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 150,
+      "margin_m": 0.16138266578634197,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 150,
+      "margin_m": 0.0963826657863418,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 150,
+      "margin_m": 0.8493826657863419,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 150,
+      "margin_m": 0.3092844783846298,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 200,
+      "margin_m": 0.1698255267314268,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 200,
+      "margin_m": 0.10482552673142642,
+      "z": 0.15899999999999997
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 200,
+      "margin_m": 0.8770755267314265,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 200,
+      "margin_m": 0.1698255267314268,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 200,
+      "margin_m": 0.10482552673142642,
+      "z": 0.15899999999999997
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 200,
+      "margin_m": 0.8770755267314265,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 200,
+      "margin_m": 0.2902313849341642,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 300,
+      "margin_m": 0.17823534698307442,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 300,
+      "margin_m": 0.11323534698307425,
+      "z": 0.103
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 300,
+      "margin_m": 0.9047353469830745,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 300,
+      "margin_m": 0.17823534698307442,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 300,
+      "margin_m": 0.11323534698307425,
+      "z": 0.103
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 300,
+      "margin_m": 0.9047353469830745,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 300,
+      "margin_m": 0.2711791916861128,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 500,
+      "margin_m": 0.18494683558149294,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 500,
+      "margin_m": 0.11994683558149277,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 500,
+      "margin_m": 0.9268468355814928,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 500,
+      "margin_m": 0.18494683558149294,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 500,
+      "margin_m": 0.11994683558149277,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 500,
+      "margin_m": 0.9268468355814928,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 500,
+      "margin_m": 0.2517341415859542,
+      "z": 3.8233200530681506
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 1000,
+      "margin_m": 0.18997460448106374,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 1000,
+      "margin_m": 0.12497460448106334,
+      "z": 0.15899999999999997
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 1000,
+      "margin_m": 0.9434246044810635,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 1000,
+      "margin_m": 0.18997460448106374,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 1000,
+      "margin_m": 0.12497460448106334,
+      "z": 0.15899999999999997
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 1000,
+      "margin_m": 0.9434246044810635,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 1000,
+      "margin_m": 0.22936491100777934,
+      "z": 3.8233200530681506
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 2000,
+      "margin_m": 0.19248745056117578,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 2000,
+      "margin_m": 0.1274874505611756,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 2000,
+      "margin_m": 0.951712450561176,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 2000,
+      "margin_m": 0.19248745056117578,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 2000,
+      "margin_m": 0.1274874505611756,
+      "z": 0.11699999999999999
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 2000,
+      "margin_m": 0.951712450561176,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 2000,
+      "margin_m": 0.2181804214422538,
+      "z": 3.8233200530681506
+    }
+  ],
+  "pairs": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.009999999999999953,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 1.0
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999953
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999953
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010000000000000009,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 1.0
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010000000000000009
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010000000000000009
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.011380068458111403,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.7774875814074271
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111403
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111403
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.011380068458111348,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.770008704904235
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111348
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111348
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.011380068458111403,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.7774875814074271
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111403
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111403
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.011380068458111348,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.770008704904235
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111348
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.011380068458111348
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010882795232062814,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8227134823885283
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062814
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062814
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010882795232062925,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8167242921260638
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062925
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062925
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010882795232062814,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8227134823885283
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062814
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062814
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010882795232062925,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8167242921260638
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062925
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010882795232062925
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010612883291765463,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8526813634230752
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765463
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765463
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010612883291765518,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8476876173342156
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765518
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765518
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010612883291765463,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8526813634230752
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765463
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765463
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010612883291765518,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8476876173342156
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765518
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010612883291765518
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010344652459508552,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8899202417448409
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508552
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508552
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010344652459508497,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8861728793912145
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508497
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508497
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010344652459508552,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8899202417448409
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508552
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508552
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010344652459508497,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.8861728793912145
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508497
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010344652459508497
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010153148933261913,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9268976597911478
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261913
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261913
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010153148933261968,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9243984411632564
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261968
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261968
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010153148933261913,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9268976597911478
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261913
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261913
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010153148933261968,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9243984411632564
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261968
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010153148933261968
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010055128101129518,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9562798940253033
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129518
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129518
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010055128101129629,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9547800627847967
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129629
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129629
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010055128101129518,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9562798940253033
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129518
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129518
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010055128101129629,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9547800627847967
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129629
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010055128101129629
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.01001378144380366,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9781943617273513
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.01001378144380366
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.01001378144380366
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010013781443803715,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.977444382821398
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010013781443803715
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010013781443803715
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.01001378144380366,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9781943617273513
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.01001378144380366
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.01001378144380366
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010013781443803715,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.977444382821398
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010013781443803715
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010013781443803715
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010003445324612392,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9891110139651123
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612392
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612392
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010003445324612337,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9887360166018403
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612337
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612337
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010003445324612392,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9891110139651123
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612392
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612392
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010003445324612337,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.9887360166018403
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612337
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010003445324612337
+        }
+      ]
+    }
+  ],
+  "coupled": [],
+  "errors": [],
+  "building_pass": true,
+  "body_pass": true,
+  "gauge_pass": true,
+  "mesh_surface_checks": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 125,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 150,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 200,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 300,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 1000,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 2000,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    }
+  ],
+  "mesh_audit": {
+    "1号車_body": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    },
+    "2号車_body": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    },
+    "1号車_gauge": {
+      "closed": true,
+      "min_area": 0.9100008010864258,
+      "volume": 174.78789522043465
+    },
+    "2号車_gauge": {
+      "closed": true,
+      "min_area": 0.9100008010864258,
+      "volume": 174.78789522043465
+    },
+    "連接部1_機器配置限界": {
+      "closed": true,
+      "min_area": 0.0544113852083683,
+      "volume": 8.654670001351146
+    },
+    "建築限界": {
+      "closed": true,
+      "min_area": 0.04100000113248825,
+      "volume": 381.9437434634735
+    }
+  },
+  "building_mesh_unchanged": true,
+  "source_sha256": "4e18d35a75bde781fd6d3ab3d5bc6ce0d6a9b302de4fdbb88bab3acbebe2f3a0"
+}

@@ -1,0 +1,35 @@
+断面・接触試験 R=直線
+断面・接触試験 R=100
+断面・接触試験 R=125
+断面・接触試験 R=150
+断面・接触試験 R=200
+断面・接触試験 R=300
+断面・接触試験 R=500
+断面・接触試験 R=1000
+断面・接触試験 R=2000
+00:00.891  blend            | Read blend: "F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\data\基準_Ver2.blend"
+00:00.938  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\kakut\.thumbnails\large\blender_28936_3fb8c9eb9941114477c2a1a9a94a77f6.png.png"
+00:00.953  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\kakut\.thumbnails\large\blender_28936_237b04cfa96c3626ee572455d5e2dbfd.png.png"
+00:00.953  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\kakut\.thumbnails\large\blender_28936_72c96c93bfa3794e954406dd462a6939.png.png"
+Traceback (most recent call last):
+  File "F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\blender_worker.py", line 27, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\blender_worker.py", line 24, in main
+    if not args.no_render:previews(model,out)
+                          ~~~~~~~~^^^^^^^^^^^
+  File "F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\rendering.py", line 41, in previews
+    render(objects,out/'モデルプレビュー.png')
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\rendering.py", line 25, in render
+    scene.display.shading.background_type='WORLD';scene.world.color=(.65,.65,.65)
+                                                  ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'color' and no __dict__ for setting new attributes
+Info: Saved as "部品モデル.blend"
+Info: Saved as "編成_直線.blend"
+Info: Saved as "編成_指定条件.blend"
+
+Error: script failed, file: 'F:\製作物\3Dモデル\こやん鉄道\試験\車両限界_狭軌\連接車_パラメトリック生成\blender_worker.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

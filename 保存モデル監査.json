@@ -1,0 +1,82 @@
+[
+  {
+    "preset": "連接車_15m",
+    "car": 1,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    }
+  },
+  {
+    "preset": "連接車_15m",
+    "car": 2,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    }
+  },
+  {
+    "preset": "連接車_15m_11m_15m",
+    "car": 1,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    }
+  },
+  {
+    "preset": "連接車_15m_11m_15m",
+    "car": 2,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 116.57999523997462
+    }
+  },
+  {
+    "preset": "連接車_15m_11m_15m",
+    "car": 3,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 162.97799344372973
+    }
+  },
+  {
+    "preset": "連接車_41m_通常台車",
+    "car": 1,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 165.87786833146447
+    }
+  },
+  {
+    "preset": "連接車_41m_通常台車",
+    "car": 2,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 116.57999523997462
+    }
+  },
+  {
+    "preset": "連接車_41m_通常台車",
+    "car": 3,
+    "pantograph_centered_fixed_size": true,
+    "mesh": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 165.87786833146447
+    }
+  }
+]

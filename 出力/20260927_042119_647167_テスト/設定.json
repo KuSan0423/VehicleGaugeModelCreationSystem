@@ -1,0 +1,36 @@
+{
+  "name": "テスト",
+  "lengths_mm": [
+    14850.0,
+    10000.0,
+    14850.0
+  ],
+  "gaps_mm": [
+    400.0,
+    400.0
+  ],
+  "joint_fractions": [
+    0.5,
+    0.5
+  ],
+  "outer_insets_mm": [
+    3000.0,
+    3000.0
+  ],
+  "coupler_mm": [
+    250.0,
+    250.0
+  ],
+  "radius_m": 100.0,
+  "test_radii_m": [
+    100.0
+  ],
+  "equipment_reserve_mm": 10.0,
+  "reference_spacing_m": [
+    14.0,
+    15.0,
+    0.01
+  ],
+  "normal_ends": true,
+  "direction": 1
+}

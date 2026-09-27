@@ -1,0 +1,6660 @@
+{
+  "config": {
+    "name": "テスト",
+    "lengths_mm": [
+      14850.0,
+      10000.0,
+      14850.0
+    ],
+    "gaps_mm": [
+      400.0,
+      400.0
+    ],
+    "joint_fractions": [
+      0.5,
+      0.5
+    ],
+    "outer_insets_mm": [
+      3000.0,
+      3000.0
+    ],
+    "coupler_mm": [
+      250.0,
+      250.0
+    ],
+    "radius_m": 100.0,
+    "test_radii_m": [
+      100.0
+    ],
+    "equipment_reserve_mm": 10.0,
+    "reference_spacing_m": [
+      14.0,
+      15.0,
+      0.01
+    ],
+    "normal_ends": true,
+    "direction": 1
+  },
+  "method": "一定半径・左右曲線・カント0・動揺0。分離余裕は平面SATの下限で3D最短距離ではない。",
+  "building": [
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29
+    },
+    {
+      "car": 2,
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4
+    },
+    {
+      "car": 2,
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103
+    },
+    {
+      "car": 2,
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 0,
+      "margin_m": 0.20699601592044514,
+      "z": 3.8233200530681506
+    },
+    {
+      "car": 1,
+      "kind": "equipment",
+      "radius": 0,
+      "margin_m": 0.20699601592044514,
+      "z": 3.8233200530681506
+    },
+    {
+      "car": 0,
+      "kind": "outer_coupler",
+      "radius": 0,
+      "margin_m": 1.395,
+      "z": 0.75
+    },
+    {
+      "car": -1,
+      "kind": "outer_coupler",
+      "radius": 0,
+      "margin_m": 1.395,
+      "z": 0.75
+    },
+    {
+      "car": 0,
+      "kind": "body",
+      "radius": 100.0,
+      "margin_m": 0.1808407143487607,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "gauge",
+      "radius": 100.0,
+      "margin_m": 0.128599832561052,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "pantograph",
+      "radius": 100.0,
+      "margin_m": 0.8938318584316955,
+      "z": 4.29
+    },
+    {
+      "car": 1,
+      "kind": "body",
+      "radius": 100.0,
+      "margin_m": 0.2657343449663889,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "gauge",
+      "radius": 100.0,
+      "margin_m": 0.21328601084371557,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "pantograph",
+      "radius": 100.0,
+      "margin_m": 0.9402084810244664,
+      "z": 4.29
+    },
+    {
+      "car": 2,
+      "kind": "body",
+      "radius": 100.0,
+      "margin_m": 0.1808407143487607,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 2,
+      "kind": "gauge",
+      "radius": 100.0,
+      "margin_m": 0.128599832561052,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 2,
+      "kind": "pantograph",
+      "radius": 100.0,
+      "margin_m": 0.8938318584316955,
+      "z": 4.29
+    },
+    {
+      "car": 0,
+      "kind": "equipment",
+      "radius": 100.0,
+      "margin_m": 0.34839948156418665,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 1,
+      "kind": "equipment",
+      "radius": 100.0,
+      "margin_m": 0.34839948156418665,
+      "z": 3.9102584327308305
+    },
+    {
+      "car": 0,
+      "kind": "outer_coupler",
+      "radius": 100.0,
+      "margin_m": 1.378453980648141,
+      "z": 0.75
+    },
+    {
+      "car": -1,
+      "kind": "outer_coupler",
+      "radius": 100.0,
+      "margin_m": 1.378453980648141,
+      "z": 0.75
+    },
+    {
+      "car": "same",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": null,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.0,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.01,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.02,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.03,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.04,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.05,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.06,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.07,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.08,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.09,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.1,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.11,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.12,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.13,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.14,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.15,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.16,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.17,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.18,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.19,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.2,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.21,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.22,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.23,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.24,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.25,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.26,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.27,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.28,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.29,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.3,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.31,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.32,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.33,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.34,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.35,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.36,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.37,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.38,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.39,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.4,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.41,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.42,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.43,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.44,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.45,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.46,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.47,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.48,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.49,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.5,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.51,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.52,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.53,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.54,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.55,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.56,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.57,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.58,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.59,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.6,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.61,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.62,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.63,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.64,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.65,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.66,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.67,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.68,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.69,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.7,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.71,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.72,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.73,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.74,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.75,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.76,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.77,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.78,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.79,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.8,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.81,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.82,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.83,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.84,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.85,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.86,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.87,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.88,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.89,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.9,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.91,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.92,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.93,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.94,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.95,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.96,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.97,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.98,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 14.99,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 0,
+      "direction": 1,
+      "spacing_m": 15.0,
+      "margin_m": 1.395
+    },
+    {
+      "car": "20m",
+      "kind": "body",
+      "radius": 0,
+      "margin_m": 0.19500000000000006,
+      "z": 0.4,
+      "spacing_m": 14.0
+    },
+    {
+      "car": "20m",
+      "kind": "gauge",
+      "radius": 0,
+      "margin_m": 0.1299999999999999,
+      "z": 0.103,
+      "spacing_m": 14.0
+    },
+    {
+      "car": "20m",
+      "kind": "pantograph",
+      "radius": 0,
+      "margin_m": 0.9600000000000001,
+      "z": 4.29,
+      "spacing_m": 14.0
+    },
+    {
+      "car": "same",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": null,
+      "margin_m": 1.4005048006538088
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.0,
+      "margin_m": 1.3716572010922503
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.01,
+      "margin_m": 1.3719988333998172
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.02,
+      "margin_m": 1.3723407989871417
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.03,
+      "margin_m": 1.3726830980362932
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.04,
+      "margin_m": 1.3730257307295402
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.05,
+      "margin_m": 1.3733686972493784
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.06,
+      "margin_m": 1.3737119977785595
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.07,
+      "margin_m": 1.374055632500034
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.08,
+      "margin_m": 1.374399601596994
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.09,
+      "margin_m": 1.3747439052528874
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.1,
+      "margin_m": 1.375088543651347
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.11,
+      "margin_m": 1.3754335169763037
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.12,
+      "margin_m": 1.3757788254118735
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.13,
+      "margin_m": 1.376124469142428
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.14,
+      "margin_m": 1.376470448352566
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.15,
+      "margin_m": 1.376816763227171
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.16,
+      "margin_m": 1.3771634139512825
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.17,
+      "margin_m": 1.3775104007102383
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.18,
+      "margin_m": 1.3778577236896323
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.19,
+      "margin_m": 1.3782053830752146
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.2,
+      "margin_m": 1.3785533790530762
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.21,
+      "margin_m": 1.378901711809493
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.22,
+      "margin_m": 1.379250381531011
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.23,
+      "margin_m": 1.3795993884044035
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.24,
+      "margin_m": 1.3799487326166995
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.25,
+      "margin_m": 1.3802984143551695
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.26,
+      "margin_m": 1.380648433807326
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.27,
+      "margin_m": 1.3809987911609367
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.28,
+      "margin_m": 1.381349486604054
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.29,
+      "margin_m": 1.3817005203249009
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.3,
+      "margin_m": 1.3820518925119982
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.31,
+      "margin_m": 1.3824036033541516
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.32,
+      "margin_m": 1.382755653040351
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.33,
+      "margin_m": 1.3831080417598853
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.34,
+      "margin_m": 1.3834607697022845
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.35,
+      "margin_m": 1.3838138370573487
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.36,
+      "margin_m": 1.3841672440150914
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.37,
+      "margin_m": 1.3845209907658385
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.38,
+      "margin_m": 1.384875077500129
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.39,
+      "margin_m": 1.3852295044088008
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.4,
+      "margin_m": 1.3855842716829043
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.41,
+      "margin_m": 1.3859393795138173
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.42,
+      "margin_m": 1.386294828093102
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.43,
+      "margin_m": 1.3866506176126334
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.44,
+      "margin_m": 1.3870067482645423
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.45,
+      "margin_m": 1.3873632202412152
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.46,
+      "margin_m": 1.3877200337353228
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.47,
+      "margin_m": 1.3880771889397634
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.48,
+      "margin_m": 1.3884346860477477
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.49,
+      "margin_m": 1.388792525252728
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.5,
+      "margin_m": 1.3891507067484268
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.51,
+      "margin_m": 1.3895092307288648
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.52,
+      "margin_m": 1.389868097388276
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.53,
+      "margin_m": 1.3902273069212496
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.54,
+      "margin_m": 1.3905868595225597
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.55,
+      "margin_m": 1.390946755387307
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.56,
+      "margin_m": 1.3913069947108765
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.57,
+      "margin_m": 1.391667577688895
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.58,
+      "margin_m": 1.3920285045172873
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.59,
+      "margin_m": 1.3923897753922487
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.6,
+      "margin_m": 1.3927513905102442
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.61,
+      "margin_m": 1.3931133500680515
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.62,
+      "margin_m": 1.3934756542626756
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.63,
+      "margin_m": 1.393838303291477
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.64,
+      "margin_m": 1.3942012973520432
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.65,
+      "margin_m": 1.3945646366422464
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.66,
+      "margin_m": 1.3949283213602994
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.67,
+      "margin_m": 1.3952923517046143
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.68,
+      "margin_m": 1.3956567278739582
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.69,
+      "margin_m": 1.3960214500673827
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.7,
+      "margin_m": 1.3963865184841806
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.71,
+      "margin_m": 1.3967519333240004
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.72,
+      "margin_m": 1.3971176947867177
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.73,
+      "margin_m": 1.3974838030725634
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.74,
+      "margin_m": 1.39785025838201
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.75,
+      "margin_m": 1.3982170609158429
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.76,
+      "margin_m": 1.3985842108751596
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.77,
+      "margin_m": 1.3989517084613423
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.78,
+      "margin_m": 1.3993195538760572
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.79,
+      "margin_m": 1.3996877473212974
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.8,
+      "margin_m": 1.4000562889993118
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.81,
+      "margin_m": 1.4004251791127187
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.82,
+      "margin_m": 1.4005050906529304
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.83,
+      "margin_m": 1.4005055482968798
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.84,
+      "margin_m": 1.4005061046314067
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.85,
+      "margin_m": 1.4005067598564152
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.86,
+      "margin_m": 1.400507514172193
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.87,
+      "margin_m": 1.400508367779227
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.88,
+      "margin_m": 1.4005093208783874
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.89,
+      "margin_m": 1.4005103736708007
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.9,
+      "margin_m": 1.400511526357934
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.91,
+      "margin_m": 1.4005127791415246
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.92,
+      "margin_m": 1.4005141322236652
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.93,
+      "margin_m": 1.4005155858066898
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.94,
+      "margin_m": 1.400517140093302
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.95,
+      "margin_m": 1.40051879528649
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.96,
+      "margin_m": 1.4005205515895396
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.97,
+      "margin_m": 1.4005224092060926
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.98,
+      "margin_m": 1.4005243683400606
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 14.99,
+      "margin_m": 1.400526429195696
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": -1,
+      "spacing_m": 15.0,
+      "margin_m": 1.4005285919775643
+    },
+    {
+      "car": "same",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": null,
+      "margin_m": 1.4005048006538088
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.0,
+      "margin_m": 1.3716572010922503
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.01,
+      "margin_m": 1.3719988333998172
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.02,
+      "margin_m": 1.3723407989871417
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.03,
+      "margin_m": 1.3726830980362932
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.04,
+      "margin_m": 1.3730257307295402
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.05,
+      "margin_m": 1.3733686972493784
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.06,
+      "margin_m": 1.3737119977785595
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.07,
+      "margin_m": 1.374055632500034
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.08,
+      "margin_m": 1.374399601596994
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.09,
+      "margin_m": 1.3747439052528874
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.1,
+      "margin_m": 1.375088543651347
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.11,
+      "margin_m": 1.3754335169763037
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.12,
+      "margin_m": 1.3757788254118735
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.13,
+      "margin_m": 1.376124469142428
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.14,
+      "margin_m": 1.376470448352566
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.15,
+      "margin_m": 1.376816763227171
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.16,
+      "margin_m": 1.3771634139512825
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.17,
+      "margin_m": 1.3775104007102383
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.18,
+      "margin_m": 1.3778577236896323
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.19,
+      "margin_m": 1.3782053830752146
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.2,
+      "margin_m": 1.3785533790530762
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.21,
+      "margin_m": 1.378901711809493
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.22,
+      "margin_m": 1.379250381531011
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.23,
+      "margin_m": 1.3795993884044035
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.24,
+      "margin_m": 1.3799487326166995
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.25,
+      "margin_m": 1.3802984143551695
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.26,
+      "margin_m": 1.380648433807326
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.27,
+      "margin_m": 1.3809987911609367
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.28,
+      "margin_m": 1.381349486604054
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.29,
+      "margin_m": 1.3817005203249009
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.3,
+      "margin_m": 1.3820518925119982
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.31,
+      "margin_m": 1.3824036033541516
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.32,
+      "margin_m": 1.382755653040351
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.33,
+      "margin_m": 1.3831080417598853
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.34,
+      "margin_m": 1.3834607697022845
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.35,
+      "margin_m": 1.3838138370573487
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.36,
+      "margin_m": 1.3841672440150914
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.37,
+      "margin_m": 1.3845209907658385
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.38,
+      "margin_m": 1.384875077500129
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.39,
+      "margin_m": 1.3852295044088008
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.4,
+      "margin_m": 1.3855842716829043
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.41,
+      "margin_m": 1.3859393795138173
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.42,
+      "margin_m": 1.386294828093102
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.43,
+      "margin_m": 1.3866506176126334
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.44,
+      "margin_m": 1.3870067482645423
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.45,
+      "margin_m": 1.3873632202412152
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.46,
+      "margin_m": 1.3877200337353228
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.47,
+      "margin_m": 1.3880771889397634
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.48,
+      "margin_m": 1.3884346860477477
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.49,
+      "margin_m": 1.388792525252728
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.5,
+      "margin_m": 1.3891507067484268
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.51,
+      "margin_m": 1.3895092307288648
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.52,
+      "margin_m": 1.389868097388276
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.53,
+      "margin_m": 1.3902273069212496
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.54,
+      "margin_m": 1.3905868595225597
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.55,
+      "margin_m": 1.390946755387307
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.56,
+      "margin_m": 1.3913069947108765
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.57,
+      "margin_m": 1.391667577688895
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.58,
+      "margin_m": 1.3920285045172873
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.59,
+      "margin_m": 1.3923897753922487
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.6,
+      "margin_m": 1.3927513905102442
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.61,
+      "margin_m": 1.3931133500680515
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.62,
+      "margin_m": 1.3934756542626756
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.63,
+      "margin_m": 1.393838303291477
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.64,
+      "margin_m": 1.3942012973520432
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.65,
+      "margin_m": 1.3945646366422464
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.66,
+      "margin_m": 1.3949283213602994
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.67,
+      "margin_m": 1.3952923517046143
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.68,
+      "margin_m": 1.3956567278739582
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.69,
+      "margin_m": 1.3960214500673827
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.7,
+      "margin_m": 1.3963865184841806
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.71,
+      "margin_m": 1.3967519333240004
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.72,
+      "margin_m": 1.3971176947867177
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.73,
+      "margin_m": 1.3974838030725634
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.74,
+      "margin_m": 1.39785025838201
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.75,
+      "margin_m": 1.3982170609158429
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.76,
+      "margin_m": 1.3985842108751596
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.77,
+      "margin_m": 1.3989517084613423
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.78,
+      "margin_m": 1.3993195538760572
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.79,
+      "margin_m": 1.3996877473212974
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.8,
+      "margin_m": 1.4000562889993118
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.81,
+      "margin_m": 1.4004251791127187
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.82,
+      "margin_m": 1.4005050906529304
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.83,
+      "margin_m": 1.4005055482968798
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.84,
+      "margin_m": 1.4005061046314067
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.85,
+      "margin_m": 1.4005067598564152
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.86,
+      "margin_m": 1.400507514172193
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.87,
+      "margin_m": 1.400508367779227
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.88,
+      "margin_m": 1.4005093208783874
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.89,
+      "margin_m": 1.4005103736708007
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.9,
+      "margin_m": 1.400511526357934
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.91,
+      "margin_m": 1.4005127791415246
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.92,
+      "margin_m": 1.4005141322236652
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.93,
+      "margin_m": 1.4005155858066898
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.94,
+      "margin_m": 1.400517140093302
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.95,
+      "margin_m": 1.40051879528649
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.96,
+      "margin_m": 1.4005205515895396
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.97,
+      "margin_m": 1.4005224092060926
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.98,
+      "margin_m": 1.4005243683400606
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 14.99,
+      "margin_m": 1.400526429195696
+    },
+    {
+      "car": "20m",
+      "kind": "joining_coupler",
+      "radius": 100.0,
+      "direction": 1,
+      "spacing_m": 15.0,
+      "margin_m": 1.4005285919775643
+    },
+    {
+      "car": "20m",
+      "kind": "body",
+      "radius": 100.0,
+      "margin_m": 0.1193792398375757,
+      "z": 3.9102584327308305,
+      "spacing_m": 15.0
+    },
+    {
+      "car": "20m",
+      "kind": "gauge",
+      "radius": 100.0,
+      "margin_m": 0.06693090571490212,
+      "z": 3.9102584327308305,
+      "spacing_m": 15.0
+    },
+    {
+      "car": "20m",
+      "kind": "pantograph",
+      "radius": 100.0,
+      "margin_m": 0.7938533758956532,
+      "z": 4.29,
+      "spacing_m": 15.0
+    }
+  ],
+  "pairs": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.009999999999995346,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.39999999999999947
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.799999999999995
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999787
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.41
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.3999999999999959
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999998899
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999787
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.409999999999995
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999995346
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.00644378979865
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.009999999999995346,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.39999999999999947
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.799999999999995
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999787
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.41
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.3999999999999959
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999998899
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999999787
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.409999999999995
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.009999999999995346
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.00644378979865
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "minimum_m": 0.010257053886053136,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.23623264407409827
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.406487303364052
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468981119
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24648969796015
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.23623264407409827
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886054024
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886053136
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.246489697960152
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468981119
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.020514107772108
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "minimum_m": 0.010257053886053136,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.23062894310278814
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.395350509609141
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468982007
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24088599698884
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.23062894310278814
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886054024
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886053136
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24088599698884
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468982007
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.020514107772108
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "minimum_m": 0.010257053886053136,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.23623264407409827
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.406487303364052
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468981119
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24648969796015
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.23623264407409827
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886054024
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886053136
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.246489697960152
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468981119
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.020514107772108
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "minimum_m": 0.010257053886053136,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "category": "car_car",
+          "margin_m": 0.23062894310278814
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 10.395350509609141
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468982007
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24088599698884
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "category": "car_car",
+          "margin_m": 0.23062894310278814
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886054024
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010257053886053136
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "category": "car_equipment",
+          "margin_m": 10.24088599698884
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "category": "car_equipment",
+          "margin_m": 0.010345169468982007
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "category": "equipment_equipment",
+          "margin_m": 10.020514107772108
+        }
+      ]
+    }
+  ],
+  "coupled": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "other": "same",
+      "kind": "body",
+      "margin_m": 0.5000000000000036,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "other": "same",
+      "kind": "gauge",
+      "margin_m": 0.5000000000000036,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "other": "20m",
+      "kind": "body",
+      "margin_m": 0.5,
+      "spacing_m": 14.0,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "other": "20m",
+      "kind": "gauge",
+      "margin_m": 0.25,
+      "spacing_m": 14.0,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "other": "same",
+      "kind": "body",
+      "margin_m": 0.23066649530103334,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "other": "same",
+      "kind": "gauge",
+      "margin_m": 0.22145310181977607,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "other": "20m",
+      "kind": "body",
+      "margin_m": 0.21652344938045687,
+      "spacing_m": 14.88,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "other": "20m",
+      "kind": "gauge",
+      "margin_m": -0.03890224982267654,
+      "spacing_m": 15.0,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "other": "same",
+      "kind": "body",
+      "margin_m": 0.23066649530103334,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "other": "same",
+      "kind": "gauge",
+      "margin_m": 0.22145310181977607,
+      "spacing_m": null,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "other": "20m",
+      "kind": "body",
+      "margin_m": 0.21652344938045687,
+      "spacing_m": 14.88,
+      "pair": [
+        2,
+        0
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "other": "20m",
+      "kind": "gauge",
+      "margin_m": -0.03890224982267654,
+      "spacing_m": 15.0,
+      "pair": [
+        2,
+        0
+      ]
+    }
+  ],
+  "adjacent_tangent_gaps": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.39999999999999947
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.3999999999999959
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.39999999999999947
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.3999999999999959
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.2366035806789144
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.2366035806789144
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.2309910806789146
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.2309910806789146
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.2366035806789144
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.2366035806789144
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "pair": [
+        0,
+        1
+      ],
+      "gap_m": 0.2309910806789146
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "pair": [
+        1,
+        2
+      ],
+      "gap_m": 0.2309910806789146
+    }
+  ],
+  "errors": [],
+  "building_pass": true,
+  "body_pass": true,
+  "gauge_pass": false,
+  "mesh_surface_checks": [
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "body",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 0,
+      "direction": 1,
+      "kind": "gauge",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "body",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": -1,
+      "kind": "gauge",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 10
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_body",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "other": "same",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_1号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_2号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器1"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_3号車_gauge",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "相手_機器1",
+            "相手_機器2"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "body",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_body",
+            "2号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "3号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_body",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_body"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    },
+    {
+      "radius": 100.0,
+      "direction": 1,
+      "kind": "gauge",
+      "other": "20m",
+      "overlaps": [
+        {
+          "pair": [
+            "1号車_gauge",
+            "2号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "1号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "3号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "2号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部1_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "3号車_gauge",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 10
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "連接部2_機器配置限界"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部1_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        },
+        {
+          "pair": [
+            "連接部2_機器配置限界",
+            "相手_1号車_gauge"
+          ],
+          "surface_pairs": 0
+        }
+      ]
+    }
+  ],
+  "mesh_audit": {
+    "1号車_body": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 172.83757248688565
+    },
+    "2号車_body": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 116.57999523997462
+    },
+    "3号車_body": {
+      "closed": true,
+      "min_area": 0.29250001907348633,
+      "volume": 172.83757248688565
+    },
+    "1号車_gauge": {
+      "closed": true,
+      "min_area": 0.9652508497238159,
+      "volume": 185.40002219283895
+    },
+    "2号車_gauge": {
+      "closed": true,
+      "min_area": 0.6500005722045898,
+      "volume": 124.84849658602475
+    },
+    "3号車_gauge": {
+      "closed": true,
+      "min_area": 0.9652508497238159,
+      "volume": 185.40002219283895
+    },
+    "連接部1_機器配置限界": {
+      "closed": true,
+      "min_area": 0.016167819499969482,
+      "volume": 2.96968457308286
+    },
+    "連接部2_機器配置限界": {
+      "closed": true,
+      "min_area": 0.016167819499969482,
+      "volume": 2.969684566081191
+    },
+    "外端1_参考連結器": {
+      "closed": true,
+      "min_area": 0.07499998807907104,
+      "volume": 0.02699999678134901
+    },
+    "外端2_参考連結器": {
+      "closed": true,
+      "min_area": 0.07499998807907104,
+      "volume": 0.02699999678134901
+    },
+    "建築限界": {
+      "closed": true,
+      "min_area": 0.04100000113248825,
+      "volume": 381.9437434634735
+    }
+  },
+  "building_mesh_unchanged": true,
+  "source_sha256": "4e18d35a75bde781fd6d3ab3d5bc6ce0d6a9b302de4fdbb88bab3acbebe2f3a0"
+}
