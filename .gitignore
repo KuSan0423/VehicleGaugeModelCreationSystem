@@ -1,2 +1,7 @@
 /出力/
 /動作検証/
+/outputs/
+/artifacts/
+__pycache__/
+*.py[cod]
+.pytest_cache/
