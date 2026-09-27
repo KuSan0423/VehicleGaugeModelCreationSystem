@@ -4,13 +4,19 @@
 
 このPCでは `起動.cmd` のダブルクリックでも起動できます。動作確認済みの3種類のモデル・画像・試験結果は `examples/` にあります。この説明書のパスとコマンドは、プロジェクトのルートを基準にしています。
 
-## 起動
+## セットアップと起動
+
+初回は `セットアップ.cmd`、または `py -3 scripts/setup_venv.py` を実行してください。プロジェクト専用の `.venv` を作り、Pillowを導入します。既に環境がある場合は再利用し、必要な依存ライブラリを補います。依存関係を変更したときも同じコマンドを再実行できます。
 
 ```text
 python launch.py
 ```
 
-Python 3.10以降、tkinter、Pillowが必要です。このPCでは、通常のPythonにPillowがない場合、既存のCodex同梱Pythonを自動利用します。追加のインストールや既存環境の変更はしません。他のPCでは `python -m pip install -r requirements.txt` でPillowを導入してください。
+Python 3.10以降、tkinter、Pillowが必要です。`起動.cmd` は `.venv` のPythonを使用します。`python launch.py` とテスト・サンプル生成スクリプトも `.venv` があればその環境に切り替えます。依存ライブラリが不足している場合はセットアップ手順を表示します。
+
+手動で準備する場合は `py -3 -m venv .venv`、続いて `.venv\Scripts\python.exe -m pip install -r requirements.txt` を実行してください。activateしなくても起動できます。tkinterはpipではなくPython本体のTcl/Tk機能として導入します。
+
+`.venv/` はGitから除外されます。プロジェクトを別の場所・PCへ移すときは、移動先で仮想環境を再作成してください。Blender内の生成・検証コードは引き続きBlender付属Pythonで実行します。
 
 BlenderはPATH、標準インストール先、Steam版の配置から検出します。見つからなければ「Blender参照」でblender.exeを指定します。このPCのBlender 5.2.2で生成確認済みです。
 
@@ -114,6 +120,8 @@ python scripts/run_tests.py --gui
 |---|---|
 | launch.py | 外部Pythonからの起動・一括実行 |
 | src/rail_clearance/cli.py | コマンドライン処理 |
+| src/rail_clearance/runtime.py | .venv選択・外部Pythonの依存関係確認 |
+| scripts/setup_venv.py | 専用仮想環境の作成・依存ライブラリ導入 |
 | src/rail_clearance/gui.py | 入力画面・即時プレビュー・実行状態 |
 | src/rail_clearance/configuration.py | 設定・プリセット・入力検証 |
 | src/rail_clearance/dimension_solver.py | 手入力寸法を条件とする連立計算・条件不足／矛盾の判定 |
