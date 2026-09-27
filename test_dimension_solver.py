@@ -60,10 +60,44 @@ class DimensionSolverTests(unittest.TestCase):
             path=Path(temp)/'config.json';save(self.c,path);result=load(path)
         self.assertIsNone(result['lengths_mm'][0])
         self.assertIsNone(result['bogie_spacings_mm'][0])
+        self.assertEqual(result['coupling_face_to_shared_mm'],[None,None])
         self.assertEqual(result['total_length_mm'],41000)
     def test_all_dimension_unknowns(self):
         for key in ('lengths_mm','bogie_spacings_mm','gaps_mm','joint_fractions','outer_insets_mm','coupler_mm'):
             self.c[key]=[None]*len(self.c[key])
         with self.assertRaisesRegex(ValueError,'条件不足'):validate(self.c)
+
+    def test_face_distance_auto_and_legacy(self):
+        self.c.pop('coupling_face_to_shared_mm')
+        self.assertEqual(validate(self.c)['coupling_face_to_shared_mm'],[15000,15000])
+
+    def test_face_distance_solves_end_bodies(self):
+        self.c.update(lengths_mm=[None,10000,None],coupling_face_to_shared_mm=[15000,15000])
+        result=validate(self.c)
+        self.assertEqual(result['lengths_mm'],[14250,10000,14250])
+        self.assertEqual(result['total_length_mm'],41000)
+
+    def test_asymmetric_face_distances(self):
+        self.c.update(lengths_mm=[None,10000,None],coupling_face_to_shared_mm=[15500,14500],
+                      gaps_mm=[1300,900],joint_fractions=[.35,.6])
+        result=validate(self.c)
+        self.assertEqual(result['lengths_mm'],[14795,10000,13890])
+        self.assertEqual(result['bogie_spacings_mm'],[12250,11385,11250])
+
+    def test_face_distance_solves_projection(self):
+        self.c.update(coupler_mm=[None,250],coupling_face_to_shared_mm=[15250,None])
+        self.assertEqual(validate(self.c)['coupler_mm'],[500,250])
+
+    def test_face_distance_conflict_and_missing_constraint(self):
+        self.c['coupling_face_to_shared_mm']=[15500,None]
+        with self.assertRaisesRegex(ValueError,'矛盾'):validate(self.c)
+        self.c.update(lengths_mm=[None,10000,None],coupling_face_to_shared_mm=[15000,None])
+        with self.assertRaisesRegex(ValueError,'条件不足'):validate(self.c)
+
+    def test_face_distance_inactive_and_invalid(self):
+        c=preset(PRESETS[0]);c['coupling_face_to_shared_mm']=[15000,15000]
+        self.assertEqual(validate(c)['coupling_face_to_shared_mm'],[None,None])
+        self.c['coupling_face_to_shared_mm']=[0,None]
+        with self.assertRaisesRegex(ValueError,'正数'):validate(self.c)
 
 if __name__=='__main__':unittest.main()

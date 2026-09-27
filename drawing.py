@@ -87,10 +87,10 @@ def dimension_image(config,selected=0):
     for x,label in ((a,left_label),(b,right_label)):
         p.line((P(x),930),(P(x),1150),GRAY,dash=True)
         p.rect(P(x)-35,1100,70,30,'#bdcbd3');p.text(P(x),1160,label,24,GRAY,'middle')
-    if proj_left:
+    if config['normal_ends'] and selected==0:
         p.dim(P(lo-proj_left),P(b),850,'連結面 → 共有台車中心 '+mm(b-lo+proj_left),950)
         p.dim(P(lo-proj_left),P(a),1230,mm(a-lo+proj_left),1180)
-    elif proj_right:
+    elif config['normal_ends'] and selected==len(cars)-1:
         p.dim(P(a),P(hi+proj_right),850,'共有台車中心 → 連結面 '+mm(hi+proj_right-a),950)
         p.dim(P(b),P(hi+proj_right),1230,mm(hi+proj_right-b),1180)
     p.dim(P(a),P(b),910,'台車中心間 '+mm(b-a),950)

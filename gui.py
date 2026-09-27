@@ -17,6 +17,7 @@ FIELDS=[('name','編成名',str),('car_count','車体数',int),
         ('lengths_mm','車体長 [mm]（各車・空欄は自動）',list),
         ('bogie_spacings_mm','台車中心間 [mm]（各車・空欄は自動）',list),
         ('total_length_mm','編成全長 [mm]（空欄は自動）',float),
+        ('coupling_face_to_shared_mm','外側連結面 → 内側共有台車中心 [mm]（左,右）',list),
         ('gaps_mm','車体間隔 [mm]（各連接部）',list),
         ('joint_fractions','共有台車位置比率（左車端から）',list),
         ('outer_insets_mm','通常台車：外側車端から内側 [mm]（左,右）',list),
@@ -127,7 +128,7 @@ class App:
             c=self.read();self.current=c
             resolved=validate(c);self.error.set('')
             for key,var in self.calculated_vars.items():
-                if key in ('outer_insets_mm','coupler_mm') and not c['normal_ends']:
+                if key in ('outer_insets_mm','coupler_mm','coupling_face_to_shared_mm') and not c['normal_ends']:
                     var.set('通常台車なし：この欄は使用しません。');continue
                 values=resolved[key] if isinstance(resolved[key],list) else [resolved[key]]
                 var.set('計算結果：'+' / '.join(f'{x:,.6f}'.rstrip('0').rstrip('.') for x in values))

@@ -16,6 +16,7 @@ def preset(name):
                 bogie_spacings_mm=[None]*len(lengths), total_length_mm=None, gaps_mm=[1000]*(len(lengths)-1),
                 joint_fractions=[0.5]*(len(lengths)-1), normal_ends='41m' in name,
                 outer_insets_mm=[3000, 3000], coupler_mm=[250, 250],
+                coupling_face_to_shared_mm=[None, None],
                 radius_m=100, direction=1, test_radii_m=DEFAULT_RADII[:],
                 equipment_reserve_mm=10, reference_spacing_m=[14, 15, 0.01])
 

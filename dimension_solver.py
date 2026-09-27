@@ -7,7 +7,7 @@ import copy
 import math
 
 OPTIONAL_LISTS = ('lengths_mm', 'bogie_spacings_mm', 'gaps_mm',
-                  'joint_fractions', 'outer_insets_mm', 'coupler_mm')
+                  'joint_fractions', 'outer_insets_mm', 'coupler_mm', 'coupling_face_to_shared_mm')
 OPTIONAL_SCALARS = ('total_length_mm',)
 
 def defaults(config):
@@ -19,12 +19,14 @@ def defaults(config):
     c.setdefault('bogie_spacings_mm', [None]*n)
     c.setdefault('total_length_mm', None)
     for key, count in [('lengths_mm', n), ('bogie_spacings_mm', n), ('gaps_mm', n-1),
-                       ('joint_fractions', n-1), ('outer_insets_mm', 2), ('coupler_mm', 2)]:
+                       ('joint_fractions', n-1), ('outer_insets_mm', 2), ('coupler_mm', 2),
+                       ('coupling_face_to_shared_mm', 2)]:
         if c.get(key) is None:
             c[key] = [None]*count
         if not isinstance(c[key], list) or len(c[key]) != count:
             labels={'lengths_mm':'車体長', 'bogie_spacings_mm':'台車中心間', 'gaps_mm':'車体間隔',
-                    'joint_fractions':'共有台車位置比率', 'outer_insets_mm':'通常台車の内側距離', 'coupler_mm':'連結器突出'}
+                    'joint_fractions':'共有台車位置比率', 'outer_insets_mm':'通常台車の内側距離', 'coupler_mm':'連結器突出',
+                    'coupling_face_to_shared_mm':'連結面から共有台車中心の距離'}
             raise ValueError(f'{labels[key]}は{count}個必要です。空欄の位置もカンマで区切ってください。')
         for v in c[key]:
             if v is not None and (not isinstance(v,(int,float)) or isinstance(v,bool) or not math.isfinite(v)):
@@ -70,6 +72,14 @@ def solve(config):
             # Inactive dimensions have no geometric effect and must not create free variables.
             fixed(index,value if c['normal_ends'] else 0)
     fixed(T,c['total_length_mm'])
+    if c['normal_ends']:
+        for side,car in ((0,0),(1,n-1)):
+            distance=c['coupling_face_to_shared_mm'][side]
+            if distance is not None:
+                if distance<=0:raise ValueError('連結面から共有台車中心の距離は正数にしてください。')
+                # Outer coupling face -> normal bogie -> inner shared bogie.
+                add([(B[car],1),(A[side],1),(P[side],1)],distance,
+                    f'連結面から共有台車中心（{"左" if side==0 else "右"}）={distance:,.6g} mm')
     for i in range(n):
         terms=[(B[i],1),(L[i],-1)]
         if i==0: terms+= [(A[0],1)] if c['normal_ends'] else [(U[0],-1)]
@@ -127,6 +137,9 @@ def solve(config):
     c['joint_fractions']=[solution[u]/g for u,g in zip(U,c['gaps_mm'])]
     if c['normal_ends']:
         c['outer_insets_mm']=[solution[i] for i in A];c['coupler_mm']=[solution[i] for i in P]
+        c['coupling_face_to_shared_mm']=[solution[B[car]]+solution[A[side]]+solution[P[side]]
+                                         for side,car in ((0,0),(1,n-1))]
     else:
         for key in ('outer_insets_mm','coupler_mm'):c[key]=[v if v is not None else 0 for v in c[key]]
+        c['coupling_face_to_shared_mm']=[None,None]
     return c

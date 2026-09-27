@@ -36,6 +36,17 @@ try:
     app.vars['lengths_mm'].set(',10000,14250');app.update_preview()
     assert app.current is not None and app.error.get()==''
     assert dimensions(app.current)['length']==41
-    print('GUI: live update, constraint solving, conflicts, underconstraint, recovery OK')
+    app.vars['total_length_mm'].set('')
+    app.vars['lengths_mm'].set(',10000,')
+    app.vars['coupling_face_to_shared_mm'].set('15000,15000');app.update_preview()
+    assert app.current is not None and dimensions(app.current)['length']==41
+    assert '15,000' in app.calculated_vars['coupling_face_to_shared_mm'].get()
+    app.vars['lengths_mm'].set('14250,10000,14250')
+    app.vars['coupling_face_to_shared_mm'].set('15500,15000');app.update_preview()
+    assert app.current is None and '矛盾' in app.error.get()
+    app.vars['coupling_face_to_shared_mm'].set('');app.update_preview()
+    assert app.current is not None and app.error.get()==''
+    assert app.vars['coupling_face_to_shared_mm'].get()==''
+    print('GUI: live update, face distance constraints, conflicts, underconstraint, recovery OK')
 finally:
     root.destroy()
