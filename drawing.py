@@ -3,6 +3,7 @@ from functools import lru_cache
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from geometry import dimensions, formation, polygons, point, separation, tangent_gap
+from configuration import validate
 
 INK='#243746'; GRAY='#607582'; BLUE='#dceaf6'; GREEN='#d8eee9'; PURPLE='#eadcf1'
 
@@ -42,6 +43,7 @@ def mm(value):
     return f'{value*1000:,.1f}'.removesuffix('.0')
 
 def dimension_image(config,selected=0):
+    config=validate(config)
     d=dimensions(config); cars=d['cars']; selected=min(selected,len(cars)-1)
     p=Paper(); p.text(90,55,f'{config["name"]}｜寸法プレビュー',42,bold=True)
     p.text(90,120,'単位：mm  /  直線状態・長手方向の配置図（幅・高さ方向は模式表示）',27,GRAY)
@@ -106,6 +108,7 @@ def dimension_image(config,selected=0):
     return p.image
 
 def verification_image(config,report):
+    config=validate(config)
     d=dimensions(config); r=config['radius_m']; arr=formation(d,r,config['direction'])
     p=Paper(1800,900,'#f4f7fb')
     p.text(48,35,f'{config["name"]}｜'+(f'R{r:g}一定半径' if r else '直線')+'の接触検証',34)

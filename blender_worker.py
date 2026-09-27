@@ -4,7 +4,7 @@ import json
 import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from configuration import load
+from configuration import load,validate
 from verification import run
 from blender_model import Model
 from rendering import previews
@@ -14,7 +14,7 @@ def main():
     parser.add_argument('--config',required=True);parser.add_argument('--output',required=True)
     parser.add_argument('--test',action='store_true');parser.add_argument('--no-render',action='store_true')
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
-    config=load(args.config);out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
+    config=validate(load(args.config));out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     report=run(config,lambda s:print(s,flush=True)) if args.test else None
     model=Model(config)
     if report is not None:

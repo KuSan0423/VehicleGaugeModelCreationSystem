@@ -2,7 +2,7 @@
 import itertools
 import json
 import math
-from configuration import ROOT
+from configuration import ROOT,validate
 from geometry import dimensions, formation, polygons, separation, coupled, reference, rect, tangent_gap
 
 PROFILES = json.loads((ROOT/'data/profiles.json').read_text(encoding='utf-8'))
@@ -71,6 +71,7 @@ def pair_rows(d,arrangement,kind):
     return rows
 
 def run(config,progress=lambda s:None):
+    config=validate(config)
     d=dimensions(config)
     radii=sorted(set([0,config['radius_m']]+config['test_radii_m']))
     report=dict(config=config,method='一定半径・左右曲線・カント0・動揺0。分離余裕は平面SATの下限で3D最短距離ではない。',

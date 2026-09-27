@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
-from configuration import ROOT,save
+from configuration import ROOT,save,validate
 from geometry import dimensions
 from drawing import dimension_image,verification_image
 
@@ -25,6 +25,7 @@ def generate(config,blender=None,test=True,render=True,progress=lambda s:None,ou
         output=ROOT/'出力'/f'{datetime.now():%Y%m%d_%H%M%S_%f}_{safe}'
     out=Path(output).resolve();out.mkdir(parents=True,exist_ok=True)
     save(config,out/'設定.json')
+    save(validate(config),out/'計算済み設定.json')
     dimension_image(config).save(out/'寸法確認図.png')
     command=[exe,'--background','--factory-startup','--python-exit-code','1','--python',str(ROOT/'blender_worker.py'),
              '--','--config',str(out/'設定.json'),'--output',str(out)]

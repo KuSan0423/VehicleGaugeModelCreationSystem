@@ -7,7 +7,7 @@ import bpy
 import bmesh
 from mathutils import Vector, Matrix
 from mathutils.bvhtree import BVHTree
-from configuration import ROOT
+from configuration import ROOT,validate
 from geometry import dimensions, formation, coupled, reference, point
 from verification import PROFILES
 
@@ -81,6 +81,7 @@ def signature(obj):
 
 class Model:
     def __init__(self,config):
+        config=validate(config)
         self.config=config;self.d=dimensions(config)
         self.source=ROOT/'data/基準_Ver2.blend'
         self.source_hash=hashlib.sha256(self.source.read_bytes()).hexdigest()

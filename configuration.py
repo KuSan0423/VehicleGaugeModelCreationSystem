@@ -3,6 +3,7 @@ import copy
 import json
 import math
 from pathlib import Path
+from dimension_solver import defaults, solve
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_RADII = [100, 125, 150, 200, 300, 500, 1000, 2000]
@@ -11,7 +12,8 @@ def preset(name):
     lengths = {'連接車_15m': [14000, 14000],
                '連接車_15m_11m_15m': [14000, 10000, 14000],
                '連接車_41m_通常台車': [14250, 10000, 14250]}[name]
-    return dict(name=name, lengths_mm=lengths, gaps_mm=[1000]*(len(lengths)-1),
+    return dict(name=name, car_count=len(lengths), lengths_mm=lengths,
+                bogie_spacings_mm=[None]*len(lengths), total_length_mm=None, gaps_mm=[1000]*(len(lengths)-1),
                 joint_fractions=[0.5]*(len(lengths)-1), normal_ends='41m' in name,
                 outer_insets_mm=[3000, 3000], coupler_mm=[250, 250],
                 radius_m=100, direction=1, test_radii_m=DEFAULT_RADII[:],
@@ -20,6 +22,7 @@ def preset(name):
 PRESETS = ['連接車_15m', '連接車_15m_11m_15m', '連接車_41m_通常台車']
 
 def validate(c):
+    c = solve(c)
     if not isinstance(c['normal_ends'],bool):raise ValueError('normal_ends はtrueまたはfalseです。')
     if not isinstance(c['name'],str) or not c['name'].strip() or len(c['name'])>60:
         raise ValueError('編成名は1～60文字で指定してください。')
@@ -34,11 +37,13 @@ def validate(c):
             raise ValueError(f'{key} は左右の2個が必要です。')
     values = sum([list(c[k]) for k in ('lengths_mm', 'gaps_mm', 'joint_fractions',
                   'outer_insets_mm', 'coupler_mm', 'test_radii_m', 'reference_spacing_m')], [])
-    values += [c['radius_m'], c['equipment_reserve_mm']]
+    values += [c['radius_m'], c['equipment_reserve_mm'], c['total_length_mm']]+c['bogie_spacings_mm']
     if not all(isinstance(v, (int, float)) and math.isfinite(v) for v in values):
         raise ValueError('すべて有限の数値を入力してください。')
     if min(c['lengths_mm']) < 2000:
         raise ValueError('車体長は固定長2mのパンタグラフを収容するため2,000mm以上です。')
+    if min(c['bogie_spacings_mm']) <= 0 or c['total_length_mm'] <= 0:
+        raise ValueError('計算結果の台車中心間・編成全長は正数である必要があります。')
     if min(c['gaps_mm']) <= 0 or not all(0 < x < 1 for x in c['joint_fractions']):
         raise ValueError('車体間隔は正数、共有台車位置の比率は0より大きく1未満です。')
     if min(c['outer_insets_mm']+c['coupler_mm']) < 0:
@@ -57,7 +62,10 @@ def validate(c):
     return copy.deepcopy(c)
 
 def load(path):
-    return validate(json.loads(Path(path).read_text(encoding='utf-8-sig')))
+    c=defaults(json.loads(Path(path).read_text(encoding='utf-8-sig')))
+    validate(c)
+    return c
 
 def save(c, path):
-    Path(path).write_text(json.dumps(validate(c), ensure_ascii=False, indent=2), encoding='utf-8')
+    validate(c)
+    Path(path).write_text(json.dumps(defaults(c), ensure_ascii=False, indent=2), encoding='utf-8')

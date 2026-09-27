@@ -7,12 +7,16 @@ import tkinter as tk
 from tkinter import ttk,filedialog,messagebox
 from pathlib import Path
 from PIL import Image,ImageTk
-from configuration import ROOT,PRESETS,preset,save,load
+from configuration import ROOT,PRESETS,preset,save,load,validate
+from dimension_solver import defaults,OPTIONAL_LISTS,OPTIONAL_SCALARS
 from geometry import dimensions
 from drawing import dimension_image
 from runner import generate,find_blender
 
-FIELDS=[('name','編成名',str),('lengths_mm','車体長 [mm]（各車）',list),
+FIELDS=[('name','編成名',str),('car_count','車体数',int),
+        ('lengths_mm','車体長 [mm]（各車・空欄は自動）',list),
+        ('bogie_spacings_mm','台車中心間 [mm]（各車・空欄は自動）',list),
+        ('total_length_mm','編成全長 [mm]（空欄は自動）',float),
         ('gaps_mm','車体間隔 [mm]（各連接部）',list),
         ('joint_fractions','共有台車位置比率（左車端から）',list),
         ('outer_insets_mm','通常台車：外側車端から内側 [mm]（左,右）',list),
@@ -27,7 +31,8 @@ class App:
         self.root=root;self.root.title('連接車｜寸法プレビュー・生成・接触試験')
         root.geometry('1440x960');root.minsize(1060,720)
         self.busy=False;self.after_id=None;self.messages=queue.Queue();self.current=None;self.last_result=None
-        self.vars={};self.normal=tk.BooleanVar();self.direction=tk.StringVar(value='左曲線')
+        self.vars={};self.calculated_vars={};self.error=tk.StringVar()
+        self.normal=tk.BooleanVar();self.direction=tk.StringVar(value='左曲線')
         self.selected=tk.StringVar(value='1');self.zoom=tk.StringVar(value='全体表示')
         self.blender=tk.StringVar();self.status=tk.StringVar(value='設定を読み込み中')
         pane=ttk.Panedwindow(root,orient='horizontal');pane.pack(fill='both',expand=True)
@@ -48,7 +53,10 @@ class App:
             var=tk.StringVar();self.vars[key]=var
             entry=ttk.Entry(controls,textvariable=var,width=44);entry.pack(fill='x')
             var.trace_add('write',self.schedule)
-        ttk.Label(controls,text='複数の値はカンマ区切り。比率0.5＝隙間の中央。',foreground='#607582').pack(anchor='w',pady=6)
+            if key in OPTIONAL_LISTS+OPTIONAL_SCALARS:
+                result=tk.StringVar();self.calculated_vars[key]=result
+                ttk.Label(controls,textvariable=result,wraplength=350,foreground='#087657').pack(anchor='w')
+        ttk.Label(controls,text='寸法欄の空欄は自動計算。例：, 10000,\n欄全体が空なら全車自動。半径など試験条件は必須。\n比率0.5＝隙間の中央。',foreground='#607582').pack(anchor='w',pady=6)
         ttk.Checkbutton(controls,text='編成両端を通常台車にする',variable=self.normal,command=self.schedule).pack(anchor='w')
         ttk.Combobox(controls,textvariable=self.direction,values=['左曲線','右曲線'],state='readonly').pack(fill='x',pady=5)
         self.direction.trace_add('write',self.schedule)
@@ -62,6 +70,8 @@ class App:
         self.generate_button=ttk.Button(controls,text='3D生成・画像出力',command=lambda:self.start(False));self.generate_button.pack(fill='x',pady=3)
         self.test_button=ttk.Button(controls,text='3D生成 ＋ 接触試験 ＋ 画像出力',command=lambda:self.start(True));self.test_button.pack(fill='x',pady=3)
         ttk.Label(controls,textvariable=self.status,wraplength=340,foreground='#294d69').pack(fill='x',pady=8)
+        self.error_label=ttk.Label(viewer,textvariable=self.error,foreground='#b42318',wraplength=700,padding=8)
+        self.error_label.pack(fill='x')
         toolbar=ttk.Frame(viewer,padding=8);toolbar.pack(fill='x')
         ttk.Label(toolbar,text='詳細を表示する車両').pack(side='left')
         self.selector=ttk.Combobox(toolbar,textvariable=self.selected,values=['1','2','3'],width=5,state='readonly');self.selector.pack(side='left',padx=8)
@@ -83,8 +93,9 @@ class App:
         self.apply(preset(PRESETS[-1]));root.after(200,self.poll)
 
     def apply(self,c):
+        c=defaults(c)
         for key,_,kind in FIELDS:
-            value=c[key];self.vars[key].set(', '.join(f'{x:g}' for x in value) if kind is list else str(value))
+            value=c[key];self.vars[key].set(', '.join('' if x is None else f'{x:g}' for x in value) if kind is list else '' if value is None else str(value))
         self.normal.set(c['normal_ends']);self.direction.set('左曲線' if c['direction']==1 else '右曲線')
         self.schedule()
 
@@ -92,7 +103,16 @@ class App:
         c={}
         for key,label,kind in FIELDS:
             text=self.vars[key].get().strip()
-            try:c[key]=[float(x.strip()) for x in text.replace('、',',').replace('，',',').split(',')] if kind is list else kind(text)
+            try:
+                if kind is list:
+                    if not text and key in OPTIONAL_LISTS:
+                        n=c['car_count']
+                        count=n if key in ('lengths_mm','bogie_spacings_mm') else n-1 if key in ('gaps_mm','joint_fractions') else 2
+                        c[key]=[None]*count
+                    else:
+                        c[key]=[None if not x.strip() and key in OPTIONAL_LISTS else float(x.strip())
+                                for x in text.replace('、',',').replace('，',',').split(',')]
+                else:c[key]=None if not text and key in OPTIONAL_SCALARS else kind(text)
             except ValueError:raise ValueError(f'「{label}」を確認してください。')
         c['normal_ends']=self.normal.get();c['direction']=1 if self.direction.get()=='左曲線' else -1
         dimensions(c);return c
@@ -105,6 +125,12 @@ class App:
         self.after_id=None
         try:
             c=self.read();self.current=c
+            resolved=validate(c);self.error.set('')
+            for key,var in self.calculated_vars.items():
+                if key in ('outer_insets_mm','coupler_mm') and not c['normal_ends']:
+                    var.set('通常台車なし：この欄は使用しません。');continue
+                values=resolved[key] if isinstance(resolved[key],list) else [resolved[key]]
+                var.set('計算結果：'+' / '.join(f'{x:,.6f}'.rstrip('0').rstrip('.') for x in values))
             values=[str(i+1) for i in range(len(c['lengths_mm']))];self.selector.configure(values=values)
             if self.selected.get() not in values:self.selected.set('1')
             self.preview=dimension_image(c,int(self.selected.get())-1);self.paint()
@@ -113,7 +139,9 @@ class App:
                 self.status.set('寸法更新済み。変更前の試験結果です。再試験してください。' if stale else
                                 self.result_text(self.last_result) if self.last_result else '寸法更新済み。接触試験はボタンで実行します。')
         except ValueError as exc:
-            self.current=None;self.status.set(str(exc)+'\n図は直前の有効な設定です。')
+            self.current=None;message=str(exc)+'\n図は直前の有効な設定です。生成・試験は実行できません。'
+            self.error.set(message);self.status.set('入力エラー：右上の説明を確認してください。')
+            for var in self.calculated_vars.values():var.set('計算結果：未確定')
         state='normal' if self.current and not self.busy else 'disabled'
         self.generate_button.configure(state=state);self.test_button.configure(state=state)
 
