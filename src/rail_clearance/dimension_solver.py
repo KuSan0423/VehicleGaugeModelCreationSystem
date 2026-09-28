@@ -1,13 +1,13 @@
 """寸法の連立一次方程式。入力は拘束、Noneは未知数として扱う。
 
-共有台車位置は隙間の左右距離U,Vを未知数にすることで、比率も
-既知なら (1-f)U-fV=0、未知なら解いたU/(U+V)として扱える。
+共有台車位置は左車体端からの距離U、右車体端までの距離Vで指定する。
+U+Vは車体間隔に一致する。旧設定の比率は読み込み互換のために扱う。
 """
 import copy
 import math
 
 OPTIONAL_LISTS = ('lengths_mm', 'bogie_spacings_mm', 'gaps_mm',
-                  'joint_fractions', 'outer_insets_mm', 'coupler_mm', 'coupling_face_to_shared_mm')
+                  'joint_left_mm', 'joint_right_mm', 'outer_insets_mm', 'coupler_mm', 'coupling_face_to_shared_mm')
 OPTIONAL_SCALARS = ('total_length_mm',)
 
 def defaults(config):
@@ -19,13 +19,14 @@ def defaults(config):
     c.setdefault('bogie_spacings_mm', [None]*n)
     c.setdefault('total_length_mm', None)
     for key, count in [('lengths_mm', n), ('bogie_spacings_mm', n), ('gaps_mm', n-1),
-                       ('joint_fractions', n-1), ('outer_insets_mm', 2), ('coupler_mm', 2),
+                       ('joint_left_mm', n-1), ('joint_right_mm', n-1), ('outer_insets_mm', 2), ('coupler_mm', 2),
                        ('coupling_face_to_shared_mm', 2)]:
         if c.get(key) is None:
             c[key] = [None]*count
         if not isinstance(c[key], list) or len(c[key]) != count:
             labels={'lengths_mm':'車体長', 'bogie_spacings_mm':'台車中心間', 'gaps_mm':'車体間隔',
-                    'joint_fractions':'共有台車位置比率', 'outer_insets_mm':'通常台車の内側距離', 'coupler_mm':'連結器突出',
+                    'joint_left_mm':'左車体端から共有台車中心の距離', 'joint_right_mm':'共有台車中心から右車体端の距離',
+                    'outer_insets_mm':'通常台車の内側距離', 'coupler_mm':'連結器突出',
                     'coupling_face_to_shared_mm':'連結面から共有台車中心の距離'}
             raise ValueError(f'{labels[key]}は{count}個必要です。空欄の位置もカンマで区切ってください。')
         for v in c[key]:
@@ -36,9 +37,24 @@ def defaults(config):
         raise ValueError('編成全長は有限の数値、または空欄にしてください。')
     if not isinstance(c['normal_ends'], bool):
         raise ValueError('normal_ends はtrueまたはfalseです。')
-    for f in c['joint_fractions']:
-        if f is not None and not 0 < f < 1:
-            raise ValueError('共有台車位置比率は0より大きく1未満です。')
+    if 'joint_fractions' in c:
+        fractions=c['joint_fractions']
+        if not isinstance(fractions,list) or len(fractions)!=n-1:
+            raise ValueError(f'旧設定の共有台車位置比率は{n-1}個必要です。')
+        for f in fractions:
+            if f is not None and (not isinstance(f,(int,float)) or isinstance(f,bool) or not math.isfinite(f) or not 0<f<1):
+                raise ValueError('旧設定の共有台車位置比率は0より大きく1未満です。')
+        if any(v is not None for key in ('joint_left_mm','joint_right_mm') for v in c[key]):
+            raise ValueError('共有台車位置の旧比率とmm寸法は同時指定できません。mm寸法を使う場合はjoint_fractionsを削除してください。')
+    for i,(left,right,gap) in enumerate(zip(c['joint_left_mm'],c['joint_right_mm'],c['gaps_mm'])):
+        if any(v is not None and v<=0 for v in (left,right)):
+            raise ValueError(f'連接部{i+1}：共有台車中心までの左右寸法は正数にしてください。')
+        if gap is not None:
+            known=sum(v for v in (left,right) if v is not None)
+            if known-gap > .001:
+                raise ValueError(f'連接部{i+1}：左右寸法の合計{known:,.6g}mmが車体間隔{gap:,.6g}mmを{known-gap:,.6g}mm超えています。')
+            if left is not None and right is not None and gap-known > .001:
+                raise ValueError(f'連接部{i+1}：左右寸法の合計{known:,.6g}mmが車体間隔{gap:,.6g}mmより{gap-known:,.6g}mm小さく、矛盾しています。')
     return c
 
 def solve(config):
@@ -65,8 +81,11 @@ def solve(config):
     for i in range(n-1):
         if c['gaps_mm'][i] is not None:
             add([(U[i],1),(V[i],1)],c['gaps_mm'][i],f'連接部{i+1}の車体間隔={c["gaps_mm"][i]:,.6g} mm')
-        f=c['joint_fractions'][i]
-        if f is not None:add([(U[i],1-f),(V[i],-f)],0,f'連接部{i+1}の位置比率={f:g}')
+        fixed(U[i],c['joint_left_mm'][i])
+        fixed(V[i],c['joint_right_mm'][i])
+        if 'joint_fractions' in c:
+            f=c['joint_fractions'][i]
+            if f is not None:add([(U[i],1-f),(V[i],-f)],0,f'旧設定：連接部{i+1}の位置比率={f:g}')
     for indices,key in [(A,'outer_insets_mm'),(P,'coupler_mm')]:
         for index,value in zip(indices,c[key]):
             # Inactive dimensions have no geometric effect and must not create free variables.
@@ -134,7 +153,9 @@ def solve(config):
     c['total_length_mm']=solution[T]
     c['gaps_mm']=[solution[u]+solution[v] for u,v in zip(U,V)]
     if any(g<=0 for g in c['gaps_mm']):raise ValueError('計算結果の車体間隔が0以下です。入力寸法を確認してください。')
-    c['joint_fractions']=[solution[u]/g for u,g in zip(U,c['gaps_mm'])]
+    c['joint_left_mm']=[solution[u] for u in U]
+    c['joint_right_mm']=[solution[v] for v in V]
+    c.pop('joint_fractions',None)
     if c['normal_ends']:
         c['outer_insets_mm']=[solution[i] for i in A];c['coupler_mm']=[solution[i] for i in P]
         c['coupling_face_to_shared_mm']=[solution[B[car]]+solution[A[side]]+solution[P[side]]

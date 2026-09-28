@@ -14,7 +14,7 @@ class GeometryTests(unittest.TestCase):
             self.assertEqual(d['length'],length)
     def test_shared_nodes_and_mirror(self):
         c=preset(PRESETS[-1]);c['lengths_mm']=[16500,9200,13000]
-        c['gaps_mm']=[1300,900];c['joint_fractions']=[.35,.6]
+        c['gaps_mm']=[1300,900];c['joint_left_mm']=[455,540];c['joint_right_mm']=[845,360]
         d=dimensions(c)
         for r in (0,100,300,2000):
             left,right=formation(d,r,1),formation(d,r,-1)
@@ -41,7 +41,7 @@ class GeometryTests(unittest.TestCase):
                 p,q=polygons(d,a,kind),polygons(other,b,kind)
                 self.assertAlmostEqual(min(separation(x,y) for x in p for y in q),expected,places=9)
     def test_invalid_values(self):
-        for key,value in [('gaps_mm',[100,100]),('joint_fractions',[0,1]),
+        for key,value in [('gaps_mm',[100,100]),('joint_left_mm',[0,1]),
                           ('lengths_mm',[float('nan'),10000,14000]),('radius_m',80),
                           ('outer_insets_mm',[99999,3000])]:
             c=preset(PRESETS[-1]);c[key]=value

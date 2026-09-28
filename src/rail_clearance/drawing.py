@@ -55,7 +55,7 @@ def dimension_image(config,selected=0):
         size=max(12,min(25,int(c['length']*scale/11)))
         p.text(X(c['center']),380,f'{i+1}号車 {mm(c["length"])}',size,anchor='middle',bold=True)
     for i,e in enumerate(d['equipment']):
-        x=cars[i]['end']+config['gaps_mm'][i]/1000*config['joint_fractions'][i]
+        x=cars[i]['end']+config['joint_left_mm'][i]/1000
         p.rect(X(x-e['left']),356,(e['left']+e['right'])*scale,88,PURPLE)
     for x,proj in ((0,-d['projections'][0]),(d['body_span'],d['projections'][1])):
         if proj:p.rect(X(x),385,proj*scale,30,'#92a4af')

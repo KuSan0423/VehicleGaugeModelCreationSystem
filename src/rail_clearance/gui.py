@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import ttk,filedialog,messagebox
 from pathlib import Path
 from PIL import Image,ImageTk
-from .configuration import PRESETS,preset,save,load,validate
+from .configuration import PRESETS,preset,save,load,validate,migrate
 from .paths import PRESETS_DIR
 from .dimension_solver import defaults,OPTIONAL_LISTS,OPTIONAL_SCALARS
 from .geometry import dimensions
@@ -20,7 +20,8 @@ FIELDS=[('name','編成名',str),('car_count','車体数',int),
         ('total_length_mm','編成全長 [mm]（空欄は自動）',float),
         ('coupling_face_to_shared_mm','外側連結面 → 内側共有台車中心 [mm]（左,右）',list),
         ('gaps_mm','車体間隔 [mm]（各連接部）',list),
-        ('joint_fractions','共有台車位置比率（左車端から）',list),
+        ('joint_left_mm','左車体端 → 共有台車中心 [mm]（各連接部）',list),
+        ('joint_right_mm','共有台車中心 → 右車体端 [mm]（各連接部）',list),
         ('outer_insets_mm','通常台車：外側車端から内側 [mm]（左,右）',list),
         ('coupler_mm','外端連結器の突出 [mm]（左,右）',list),
         ('radius_m','プレビュー用曲線半径 [m]（0=直線）',float),
@@ -58,7 +59,7 @@ class App:
             if key in OPTIONAL_LISTS+OPTIONAL_SCALARS:
                 result=tk.StringVar();self.calculated_vars[key]=result
                 ttk.Label(controls,textvariable=result,wraplength=350,foreground='#087657').pack(anchor='w')
-        ttk.Label(controls,text='寸法欄の空欄は自動計算。例：, 10000,\n欄全体が空なら全車自動。半径など試験条件は必須。\n比率0.5＝隙間の中央。',foreground='#607582').pack(anchor='w',pady=6)
+        ttk.Label(controls,text='寸法欄の空欄は自動計算。例：, 10000,\n共有台車の左右寸法の合計＝車体間隔。\n片側を空欄にすると残りを計算します。\n半径など試験条件は必須。',foreground='#607582').pack(anchor='w',pady=6)
         ttk.Checkbutton(controls,text='編成両端を通常台車にする',variable=self.normal,command=self.schedule).pack(anchor='w')
         ttk.Combobox(controls,textvariable=self.direction,values=['左曲線','右曲線'],state='readonly').pack(fill='x',pady=5)
         self.direction.trace_add('write',self.schedule)
@@ -95,7 +96,7 @@ class App:
         self.apply(preset(PRESETS[-1]));root.after(200,self.poll)
 
     def apply(self,c):
-        c=defaults(c)
+        c=migrate(c)
         for key,_,kind in FIELDS:
             value=c[key];self.vars[key].set(', '.join('' if x is None else f'{x:g}' for x in value) if kind is list else '' if value is None else str(value))
         self.normal.set(c['normal_ends']);self.direction.set('左曲線' if c['direction']==1 else '右曲線')
@@ -109,7 +110,7 @@ class App:
                 if kind is list:
                     if not text and key in OPTIONAL_LISTS:
                         n=c['car_count']
-                        count=n if key in ('lengths_mm','bogie_spacings_mm') else n-1 if key in ('gaps_mm','joint_fractions') else 2
+                        count=n if key in ('lengths_mm','bogie_spacings_mm') else n-1 if key in ('gaps_mm','joint_left_mm','joint_right_mm') else 2
                         c[key]=[None]*count
                     else:
                         c[key]=[None if not x.strip() and key in OPTIONAL_LISTS else float(x.strip())

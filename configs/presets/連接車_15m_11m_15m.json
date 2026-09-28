@@ -9,10 +9,6 @@
     1000,
     1000
   ],
-  "joint_fractions": [
-    0.5,
-    0.5
-  ],
   "normal_ends": false,
   "outer_insets_mm": [
     3000,
@@ -39,5 +35,24 @@
     14,
     15,
     0.01
+  ],
+  "car_count": 3,
+  "bogie_spacings_mm": [
+    null,
+    null,
+    null
+  ],
+  "total_length_mm": null,
+  "joint_left_mm": [
+    500.0,
+    500.0
+  ],
+  "joint_right_mm": [
+    500.0,
+    500.0
+  ],
+  "coupling_face_to_shared_mm": [
+    null,
+    null
   ]
 }

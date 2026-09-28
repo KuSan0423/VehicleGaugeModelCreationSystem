@@ -6,11 +6,12 @@ def dimensions(config):
     c = validate(config)
     lengths = [v/1000 for v in c['lengths_mm']]
     gaps = [v/1000 for v in c['gaps_mm']]
-    fractions = c['joint_fractions']
+    left_offsets=[v/1000 for v in c['joint_left_mm']]
+    right_offsets=[v/1000 for v in c['joint_right_mm']]
     cars, cursor = [], 0.0
     for i, length in enumerate(lengths):
-        before = gaps[i-1]*(1-fractions[i-1]) if i else gaps[0]*fractions[0]
-        after = gaps[i]*fractions[i] if i < len(gaps) else gaps[-1]*(1-fractions[-1])
+        before = right_offsets[i-1] if i else left_offsets[0]
+        after = left_offsets[i] if i < len(gaps) else right_offsets[-1]
         a, b = -length/2-before, length/2+after
         if c['normal_ends'] and i == 0:
             a = -length/2+c['outer_insets_mm'][0]/1000
@@ -28,7 +29,7 @@ def dimensions(config):
     reserve = c['equipment_reserve_mm']/1000
     equipment = []
     for i, gap in enumerate(gaps):
-        left, right = gap*fractions[i]-reserve, gap*(1-fractions[i])-reserve
+        left, right = left_offsets[i]-reserve, right_offsets[i]-reserve
         sl, sr = [math.tan(math.asin(cars[j]['spacing']/(2*radius))) for j in (i, i+1)]
         if min(left, right) <= 0 or left+right-1.5*(sl+sr) <= 0:
             raise ValueError(f'連接部{i+1}: 指定間隔では機器限界の幅3mと端面余裕を確保できません。')

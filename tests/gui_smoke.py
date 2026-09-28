@@ -47,6 +47,18 @@ try:
     app.vars['coupling_face_to_shared_mm'].set('');app.update_preview()
     assert app.current is not None and app.error.get()==''
     assert app.vars['coupling_face_to_shared_mm'].get()==''
-    print('GUI: live update, face distance constraints, conflicts, underconstraint, recovery OK')
+    assert 'joint_fractions' not in app.vars
+    app.vars['joint_left_mm'].set('400, 500')
+    app.vars['joint_right_mm'].set('');app.update_preview()
+    assert app.current is not None and '600' in app.calculated_vars['joint_right_mm'].get()
+    assert app.vars['joint_right_mm'].get()==''
+    app.vars['joint_right_mm'].set('700, 500');app.update_preview()
+    assert app.current is None and '超え' in app.error.get()
+    assert str(app.test_button['state'])=='disabled'
+    app.vars['joint_right_mm'].set('500, 500');app.update_preview()
+    assert app.current is None and '小さく' in app.error.get()
+    app.vars['joint_right_mm'].set('600, 500');app.update_preview()
+    assert app.current is not None and app.error.get()==''
+    print('GUI: mm offsets, auto remainder, excess/shortage errors and recovery OK')
 finally:
     root.destroy()

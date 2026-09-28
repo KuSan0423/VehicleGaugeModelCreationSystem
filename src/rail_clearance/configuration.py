@@ -14,7 +14,7 @@ def preset(name):
                '連接車_41m_通常台車': [14250, 10000, 14250]}[name]
     return dict(name=name, car_count=len(lengths), lengths_mm=lengths,
                 bogie_spacings_mm=[None]*len(lengths), total_length_mm=None, gaps_mm=[1000]*(len(lengths)-1),
-                joint_fractions=[0.5]*(len(lengths)-1), normal_ends='41m' in name,
+                joint_left_mm=[500]*(len(lengths)-1), joint_right_mm=[None]*(len(lengths)-1), normal_ends='41m' in name,
                 outer_insets_mm=[3000, 3000], coupler_mm=[250, 250],
                 coupling_face_to_shared_mm=[None, None],
                 radius_m=100, direction=1, test_radii_m=DEFAULT_RADII[:],
@@ -30,13 +30,13 @@ def validate(c):
     n = len(c['lengths_mm'])
     if n < 2 or n > 20:
         raise ValueError('車体数は2～20両にしてください。')
-    for key in ('gaps_mm', 'joint_fractions'):
+    for key in ('gaps_mm', 'joint_left_mm', 'joint_right_mm'):
         if len(c[key]) != n-1:
             raise ValueError(f'{key} は車体数−1個必要です。')
     for key in ('outer_insets_mm', 'coupler_mm'):
         if len(c[key]) != 2:
             raise ValueError(f'{key} は左右の2個が必要です。')
-    values = sum([list(c[k]) for k in ('lengths_mm', 'gaps_mm', 'joint_fractions',
+    values = sum([list(c[k]) for k in ('lengths_mm', 'gaps_mm', 'joint_left_mm', 'joint_right_mm',
                   'outer_insets_mm', 'coupler_mm', 'test_radii_m', 'reference_spacing_m')], [])
     values += [c['radius_m'], c['equipment_reserve_mm'], c['total_length_mm']]+c['bogie_spacings_mm']
     if not all(isinstance(v, (int, float)) and math.isfinite(v) for v in values):
@@ -45,8 +45,8 @@ def validate(c):
         raise ValueError('車体長は固定長2mのパンタグラフを収容するため2,000mm以上です。')
     if min(c['bogie_spacings_mm']) <= 0 or c['total_length_mm'] <= 0:
         raise ValueError('計算結果の台車中心間・編成全長は正数である必要があります。')
-    if min(c['gaps_mm']) <= 0 or not all(0 < x < 1 for x in c['joint_fractions']):
-        raise ValueError('車体間隔は正数、共有台車位置の比率は0より大きく1未満です。')
+    if min(c['gaps_mm']+c['joint_left_mm']+c['joint_right_mm']) <= 0:
+        raise ValueError('車体間隔と共有台車中心までの左右寸法は正数である必要があります。')
     if min(c['outer_insets_mm']+c['coupler_mm']) < 0:
         raise ValueError('台車の内側距離と連結器突出は0以上です。')
     if c['equipment_reserve_mm'] <= 0:
@@ -62,11 +62,22 @@ def validate(c):
         raise ValueError('20m級の台車間走査は正の範囲・刻み、1,001点以内です。')
     return copy.deepcopy(c)
 
+def migrate(c):
+    """旧比率指定は読込時の形状を保ってmm指定へ変換する。新形式の空欄は保つ。"""
+    c=defaults(c)
+    if 'joint_fractions' in c:
+        resolved=validate(c)
+        c.pop('joint_fractions')
+        c['joint_left_mm']=resolved['joint_left_mm']
+        c['joint_right_mm']=resolved['joint_right_mm']
+    return c
+
 def load(path):
-    c=defaults(json.loads(Path(path).read_text(encoding='utf-8-sig')))
+    c=migrate(json.loads(Path(path).read_text(encoding='utf-8-sig')))
     validate(c)
     return c
 
 def save(c, path):
+    c=migrate(c)
     validate(c)
-    Path(path).write_text(json.dumps(defaults(c), ensure_ascii=False, indent=2), encoding='utf-8')
+    Path(path).write_text(json.dumps(c, ensure_ascii=False, indent=2), encoding='utf-8')
